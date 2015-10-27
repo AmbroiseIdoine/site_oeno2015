@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Partenaires{% endblock %}
+
+{% block content %}
+
+<div class='text-partenaires'>
+	<h3> Nos partenaires </h3>
+	<break>
+
+	<p>
+	Nous sommes heureux de vous présenter nos partenaires, qui nous supporte pour organiser le X-WineContest!
+	</p>
+</div>
+
+{% endblock%}
+
+
+
+{% block image %}
+<img alt="Figeac" title="Figeac" src="{% static 'concours/img/FigeacNuit.jpg' %} " class='backgroundImage'/>
+{% endblock %}

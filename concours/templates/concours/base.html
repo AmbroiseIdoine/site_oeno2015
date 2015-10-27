@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	{% load staticfiles %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'concours/style.css' %}" />
+	<title>{% block title %}X-WineContest{% endblock %}</title>
+</head>
+
+
+
+<body>
+  <div class='all'>
+    <div class='all-container'>
+      <header>
+          <img alt="bandeau" title="bandeau" src="{% static 'concours/img/bandeauX.png' %} " class='bandeauImage'/>
+          <nav id='navigation'>
+             {% block nav %}
+             <ul>
+                  <a class='nav-link' href="/concours">Accueil</a>
+                  <a class='nav-link' href="/concours/actualites">Actualités</a>
+                  <a class='nav-link' href="/concours/partenaires">Nos partenaires</a>
+                  <a class='nav-link' href="/concours/equipe">L'équipe</a>                  
+                  <a class='nav-link' href="/concours/contact">Contact</a>                  
+             </ul>
+             {% endblock %}
+         </nav>
+         <div class='titre'>
+           <h1>X-WineContest</h1>
+         </div>
+      </header>
+
+
+    	<section id='content'>
+    		<div class='background'>
+        {% block image %}
+        <img alt="grappe" title="grappe" src="{% static 'concours/img/grappe.bmp' %} " class='backgroundImage'/>
+        {% endblock %}
+    			<div class='text'>
+    				{% block content %}{% endblock %}
+    			</div>
+    		</div>
+    	</section>
+
+
+
+      <footer>&copy; BinetOeno</footer>
+
+    </div>
+  </div>
+</body>
+
+</html>

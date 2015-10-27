@@ -1,0 +1,125 @@
+
+
+/*tout*/
+
+.all{
+	background-color: black;
+}
+
+.all-container{
+	width: 80%;
+	height: auto;
+	margin: auto;
+}
+
+/*header*/
+
+header{
+	position:relative;
+}
+
+ul{
+	margin:0px;
+}
+
+.bandeauImage{
+	width:100%;
+}
+
+#navigation{
+	margin: none;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	background: black;
+	height: 30px;
+}
+
+.nav-link{
+	float: left;
+	color:white;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-decoration: none;
+}
+
+.titre{
+	opacity: 0.6;
+	color:white;
+	position:absolute;
+	top:5px;
+	left:90px;
+	text-decoration: none;
+}
+
+/*corps*/
+
+.background{
+	/*background-image: url("img/grappe.bmp");*/
+	height:auto;
+	position:relative;
+}
+
+.backgroundImage{
+	width:100%;
+}
+
+{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.text{
+	font-size: 12px;
+	opacity: 0.6;
+	width: auto;
+	color: white;
+	background-color: black;
+	float: right;
+	margin-right:30px;
+	padding:20px;
+	position: absolute;
+	top:40px;
+	right:30px;
+}
+
+/*accueil*/
+
+.text-accueil{
+	width: 300px;
+}
+
+/*actualités*/
+
+.text-actualites{
+	width: 500px;
+}
+
+/* contact */
+
+.tableContact{
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.text-contact{
+	width: 300px;
+}
+
+/*contact*/
+
+/*equipes*/
+
+.text-equipe{
+	width: 400px;
+}
+
+/*partenaires*/
+
+.text-partenaires{
+	width: 500px;
+}

@@ -1,1 +1,17 @@
-<h1>Bienvenue sur le site du X-Wine Contest !</h1>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<div class='text-accueil'>
+	<h3> X-WineContest: partagez votre passion!</h3>
+	<break>
+
+	<p>
+	Le binet oenologie de l'Ecole Polytechnique est fier de vous présenter son concours d'oenologie: le X-WineContest.
+	Cette première édition aura lieu le 13 février prochain à Saint-Emilion, dans la prestigieuse propriété de château Figeac: l'occasion pour chacun de partager sa passion du vin avec d'autres étudiants dans un cadre exeptionnel. 
+	</p>
+</div>
+{% endblock%}
