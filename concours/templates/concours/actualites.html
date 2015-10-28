@@ -7,6 +7,24 @@
 
 <div class='text-actualites'>
 	<h3> Actualités </h3>
+	<break>
+	<break>
+
+	{% for article in derniers_articles %}
+
+	<div class="article">
+		<h4>{{ article.titre }}</h4>
+		<img alt="img" title={{article.titre}} src={{ article.image.url }} class='img-article' />
+		<p>{{ article.contenu|truncatewords_html:80 }}</p>
+		<p><a href="{% url "concours.views.lire" article.id %}" class='link-actualites'>Lire la suite</a>
+	</div>
+
+	{% empty %}
+	
+		<p>Aucune actualité</p>
+	
+	{% endfor %}
+
 </div>
 
 

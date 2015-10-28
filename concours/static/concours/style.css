@@ -7,7 +7,7 @@
 }
 
 .all-container{
-	width: 80%;
+	width: 900px;
 	height: auto;
 	margin: auto;
 }
@@ -99,6 +99,15 @@ ul{
 	width: 500px;
 }
 
+.link-actualites{
+	text-decoration: none;
+	color: white;
+}
+
+.img-article{
+	width:100px;
+}
+
 /* contact */
 
 .tableContact{
@@ -110,8 +119,6 @@ ul{
 	width: 300px;
 }
 
-/*contact*/
-
 /*equipes*/
 
 .text-equipe{
@@ -122,4 +129,15 @@ ul{
 
 .text-partenaires{
 	width: 500px;
+}
+
+/*lire*/
+
+.text-lire{
+	width: 740px;
+}
+
+.article{
+	border-top: medium solid gray;
+	border-top-width: 1px;
 }

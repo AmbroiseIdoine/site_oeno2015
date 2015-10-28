@@ -10,11 +10,29 @@
 	<break>
 
 	<p>
-	Nous sommes heureux de vous présenter nos partenaires, qui nous supporte pour organiser le X-WineContest!
+	Nous sommes heureux de vous présenter nos partenaires, qui nous supportent pour organiser le X-WineContest!
 	</p>
+	<break>
+
+	{% for article in derniers_articles %}
+
+	<div class="article">
+		<h4>{{ article.titre }}</h4>
+		<img alt="img" title={{article.titre}} src={{ article.image.url }} class='img-article' />
+		<p>{{ article.contenu|truncatewords_html:80 }}</p>
+		<p><a href="{% url "concours.views.lire" article.id %}" class='link-actualites'>Lire la suite</a>
+	</div>
+
+	{% empty %}
+	
+		<p>Aucun article</p>
+	
+	{% endfor %}
+
 </div>
 
 {% endblock%}
+
 
 
 

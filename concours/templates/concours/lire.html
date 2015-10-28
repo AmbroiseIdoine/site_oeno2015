@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}lire{% endblock %}
+
+{% block content %}
+
+
+<div class='text-lire'>
+	<h3> {{article.titre}} </h3>
+		<img alt="img" src={{ article.image.url }} class='img-actualites'/>
+		<p>{{ article.contenu }}</p>
+	</div>
+</div>
+
+
+
+{% endblock%}

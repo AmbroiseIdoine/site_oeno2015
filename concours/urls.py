@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.conf.urls import patterns, url
 
 urlpatterns = patterns('concours.views',
@@ -11,4 +13,7 @@ urlpatterns = patterns('concours.views',
     url(r'^contact$', 'contact', name='url_contact'),
     # Page recensant les actualites (infos, presse...)
     url(r'^actualites$', 'actualites', name='url_actualites'),
+    # Page permettant de lire en détail un article (actualité, partenaire ...)
+    url(r'^lire/(?P<id>\d+)$', 'lire', name='lire_article'),
+
 )
