@@ -32,3 +32,11 @@ def lire(request, id):
     except Article.DoesNotExist:
         raise Http404
     return render(request, 'concours/lire.html', {'article': article})
+
+def allArticles(request, id, genre):
+    try:
+        article=Article.objects.filter(genre=genre).orderBy(date)
+
+    except Article.DoesNotExist:
+        raise Http404
+    return render(request, 'concours/allArticles.html', {'article': article, 'genre' : genre})

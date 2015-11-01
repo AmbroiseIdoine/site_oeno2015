@@ -38,7 +38,7 @@
         {% block image %}
         <img alt="grappe" title="grappe" src="{% static 'concours/img/grappe.bmp' %} " class='backgroundImage'/>
         {% endblock %}
-    			<div class='text'>
+    			<div class= {% block genre %}'text'{% endblock %}>
     				{% block content %}{% endblock %}
     			</div>
     		</div>

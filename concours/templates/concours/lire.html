@@ -3,12 +3,16 @@
 
 {% block title %}lire{% endblock %}
 
+{% block genre %}
+'text-centered'
+{% endblock %}
+
 {% block content %}
 
 
 <div class='text-lire'>
 	<h3> {{article.titre}} </h3>
-		<img alt="img" src={{ article.image.url }} class='img-actualites'/>
+		<img alt="img" src={{ article.image.url }} class='img-article'/>
 		<p>{{ article.contenu }}</p>
 	</div>
 </div>
