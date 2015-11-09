@@ -4,8 +4,16 @@
 
 <head>
 	{% load staticfiles %}
-
-	<link rel="stylesheet" type="text/css" href="{% static 'concours/style.css' %}" />
+  
+  <script src="{% static 'concours/CustomHTMLScroll.js' %}" ></script>
+  <script>
+    onload = function()
+  {
+    addCustomHTMLScroll( $("allArticlesText") );
+  }
+  </script>
+  <link rel="stylesheet" type="text/css" href="{% static 'concours/style.css' %}" >
+  <link rel="stylesheet" type="text/css" href="{% static 'concours/scrollbar.css' %}" >
 	<title>{% block title %}X-WineContest{% endblock %}</title>
 </head>
 

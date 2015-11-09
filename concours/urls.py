@@ -15,7 +15,7 @@ urlpatterns = patterns('concours.views',
     url(r'^actualites$', 'actualites', name='url_actualites'),
     # Page permettant de lire en détail un article (actualité, partenaire ...)
     url(r'^lire/(?P<id>\d+)$', 'lire', name='lire_article'),
-    # Page affichant tous les articles (actualités / partenaires ...)
+    # Page affichant la liste de tous les articles (actualités / partenaires ...)
     url(r'^articles$' , 'allArticles', name='allArticles')
 
 )

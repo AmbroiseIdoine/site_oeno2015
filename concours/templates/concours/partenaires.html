@@ -18,7 +18,9 @@
 
 	<div class="article">
 		<h4>{{ article.titre }}</h4>
+		{% if article.image %}
 		<img alt="img" title={{article.titre}} src={{ article.image.url }} class='img-article' />
+		{% endif %}
 		<p>{{ article.contenu|truncatewords_html:80 }}</p>
 		<p><a href="{% url "concours.views.lire" article.id %}" class='link-actualites'>Lire la suite</a>
 	</div>
@@ -28,6 +30,12 @@
 		<p>Aucun article</p>
 	
 	{% endfor %}
+
+	<form action="{% url "concours.views.allArticles" %}" method="post">
+		{% csrf_token %}
+		<input type="hidden" value='PA' name="genre"/>
+		<input type="submit" value= "Tous nos partenaires" class="post-link"/>
+	</form>
 
 </div>
 
