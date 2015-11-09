@@ -4,22 +4,16 @@
 
 <head>
 	{% load staticfiles %}
-  
-  <script src="{% static 'concours/CustomHTMLScroll.js' %}" ></script>
-  <script>
-    onload = function()
-  {
-    addCustomHTMLScroll( $("allArticlesText") );
-  }
-  </script>
   <link rel="stylesheet" type="text/css" href="{% static 'concours/style.css' %}" >
-  <link rel="stylesheet" type="text/css" href="{% static 'concours/scrollbar.css' %}" >
+  <script type="text/javascript" src="{% static 'concours/jquery-1.11.3.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'concours/perso.js' %}" ></script>
 	<title>{% block title %}X-WineContest{% endblock %}</title>
 </head>
 
 
 
 <body>
+
   <div class='all'>
     <div class='all-container'>
       <header>
@@ -44,7 +38,7 @@
     	<section id='content'>
     		<div class='background'>
         {% block image %}
-        <img alt="grappe" title="grappe" src="{% static 'concours/img/grappe.bmp' %} " class='backgroundImage'/>
+        <img alt="grappe" title="grappe" src="{% static 'concours/img/grappe.bmp' %} " class='backgroundImage' id='backgroundImage'/>
         {% endblock %}
     			<div class= {% block genre %}'text'{% endblock %}>
     				{% block content %}{% endblock %}

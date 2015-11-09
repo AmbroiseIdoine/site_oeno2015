@@ -75,6 +75,7 @@ ul{
 
 .backgroundImage{
 	width:100%;
+	position:relative;
 }
 
 {
@@ -86,7 +87,7 @@ ul{
 .text, .text-centered{
 	font-size: 12px;
 	opacity: 0.6;
-	width: auto;
+	width: 50%;
 	color: white;
 	background-color: black;
 	position: absolute;
@@ -94,8 +95,7 @@ ul{
 }
 
 .text{
-	margin-right:30px;
-	right:30px;
+	right:40px;
 	padding:20px;
 }
 
@@ -109,13 +109,12 @@ ul{
 /*accueil*/
 
 .text-accueil{
-	width: 500px;
 }
 
 /*actualités*/
 
 .text-actualites{
-	width: 500px;
+	overflow: auto;
 }
 
 .link-actualites{
@@ -135,19 +134,17 @@ ul{
 }
 
 .text-contact{
-	width: 500px;
 }
 
 /*equipes*/
 
 .text-equipe{
-	width: 500px;
 }
 
 /*partenaires*/
 
 .text-partenaires{
-	width: 500px;
+	overflow: auto;
 }
 
 /*lire*/
@@ -162,17 +159,7 @@ ul{
 
 /*allArticles*/
 .text-allArticles{
-	width: 500px;
-/*	overflow: auto;*/
+	overflow: auto;
+	max-height: 850px;
 	position:relative;
 }
-
-#allArticlesText{
-	height: 850px;
-}
-
-::-webkit-scrollbar {
-      width: 30px;
-}
-
-
