@@ -1,0 +1,7 @@
+YUI.Env.JSONP.yui_3_16_0_1_1447109809572_8845({
+   "additionalErrorInfo" : "AdServerError:No ads, NoServeReason:100",
+   "error" : "Ad Computation Failed",
+   "serverIp" : "fe10.cbs.cb.bf1.yahoo.com",
+   "status" : "1",
+   "version" : "2"
+})
