@@ -3,7 +3,7 @@
 /*tout*/
 
 .all{
-	background-color: black;
+	background-color: white;
 }
 
 .all-container{
@@ -28,11 +28,11 @@ ul{
 
 #navigation{
 	margin: none;
-	background: black;
+	background: white;
 }
 
 .nav-link{
-	color:white;
+	color: #003a56;
 	position:absolute;
 	display: inline-block;
 	padding-left: 4%;
