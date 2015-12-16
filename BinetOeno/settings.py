@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 """
 Django settings for BinetOeno project.
 
@@ -24,6 +26,8 @@ SECRET_KEY = 'k1bx4^^-@8u-sjf-xtw@#rrj5z-6^xv%e6=hvk5cb#fo_k-0#s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -54,7 +58,7 @@ ROOT_URLCONF = 'BinetOeno.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
+        'TEMPLATE_DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'concours/templates/concours'),],
         'APP_DIRS': True,

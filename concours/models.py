@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
+import unicodedata
+
 
 class Article(models.Model):
 
@@ -20,7 +22,7 @@ class Article(models.Model):
 		""" 
 		Cela stocke des articles avec un titre, une photo et un texte asocié
 		"""
-		return self.titre
+		return unicodedata.normalize('NFKD', self.titre).encode('ascii','ignore')
 
 
 
